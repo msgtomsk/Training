@@ -1,6 +1,13 @@
+{"dummyJson":[{
+  "id":1,
+  "name":"name1",
+  "age":20,
+  "place":"Bangalore"
+},
 {
   "id":1,
   "name":"name1",
   "age":20,
   "place":"Bangalore"
-}
+}]}
+
