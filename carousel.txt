@@ -1,0 +1,84 @@
+<div class="carousel_cont">
+   <div class="carousel" id="carouselID">
+     <div class="carousel_each">
+       first
+     </div>
+     <div class="carousel_each">
+       second
+     </div>
+     <div class="carousel_each">
+       third
+     </div>
+   </div>
+ </div>
+ <div class="button_cont">
+   <div class="button_left" id="buttonLeft" >
+     "left"
+     </div>
+   <div class="button_right" id="buttonRight" >
+     "right"
+   </div>
+ </div>
+gjk
+$(document).ready(function() {
+
+ var current_index = 0;
+var min_index = 0;
+var max_index = 2;
+
+function slideLeft() {
+ if(current_index <= min_index){
+   return
+ }
+ else{
+   current_index -= 1;
+   var slideValue = -33 * current_index
+   var slideString = String(slideValue)
+   document.getElementById("carouselID").style.transform = "translateX(" + slideString + "%)"
+ }
+}
+
+function slideRight() {
+ if(current_index >= max_index){
+   return
+ }
+ else{
+   current_index += 1;
+   var slideValue = -33 * current_index
+   var slideString = String(slideValue)
+   document.getElementById("carouselID").style.transform = "translateX(" + slideString + "%)";
+ }
+}
+
+document.getElementById("buttonLeft").onclick = slideLeft
+document.getElementById("buttonRight").onclick = slideRight
+})
+style
+.carousel_cont{
+ width: 100px;
+ height: 100px;
+ overflow: hidden;
+ position: relative;
+}
+
+.carousel{
+ width: 300%;
+ height: 100%;
+ display: flex;
+ transition: .5s;
+}
+
+.carousel_each{
+ display: flex;
+ width: 33%;
+ height: 100%;
+ justify-content: center;
+ align-items: center;
+}
+
+.button_cont{
+ width: 100px;
+ display: flex;
+ justify-content: space-between
+   
+}
