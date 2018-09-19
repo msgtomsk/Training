@@ -1,0 +1,28 @@
+1 . git clone <public key> -> Getting a copy of a repository onto your local machine is called cloning. 
+	example : git clone git@github.com:<your github account>/afraid-to-commit.git
+			Change into the newly-created afraid-to-commit directory
+
+2. git status
+
+3. git config user.email -> find the current emailId.
+
+4. git checkout <master> -> switch to your master branch
+
+5. git checkout -b <new-branch> <existing-branch> -> create new branch based on existing branch.
+
+6. git add git -> stage the newer changes
+
+7. git add <example.txt> -> stage particular file.
+
+8. git commit -m "added my github name" -> commit the changes (-m flag is for the message )
+
+9. git push origin <amend-my-name> -> push to particular repository
+
+10. git pull -> The pull operation does two things: it fetches updates from your GitHub fork (origin), and merges them.
+
+11. git fetch  
+    git merge origin/master -> safer option than pull.
+
+12. git branch -> Show local branches.
+
+12. 
