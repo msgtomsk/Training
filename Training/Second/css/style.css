@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+.header_section{
+    background-image: url("/images/banner.png");
+    height: 376px;
+    width: 100%;
+}
+
+.header_style{
+    margin: 0px auto;
+    max-width: 1280px;
+    padding: 10px 40px;
+   
+}
+
+.navigation{
+    display: flex;
+    position: sticky; 
+    top: 0; 
+    z-index: 1;
+}
+
+.nav_list a{
+    color: #ffffff;
+    font-family: Muli;
+    font-size: 16px;
+    letter-spacing: 2.3px;
+    text-decoration: none;
+}
+
+.topnav{  
+    margin: 0px auto;
+    width: 50%;
+}
+.nav_list{
+    color:#ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0%;
+}
+
+.icon{
+    padding:5px 5px;
+ }
+
+.notification_bar{
+    display: flex;
+    padding : 30px 0px 5px 0px;
+ }
+
+ .info{
+    color:#ffffff;
+    font-family: Muli;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    margin:0px auto;
+ }
+
+.button1{
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    color: #c85c19;
+    font-size: 14px;
+ }
+
+.date{
+     text-align: center;
+     color: #ffffff;
+     font-family: Muli;
+
+     font-size: 20px;
+     font-weight: 600;
+     letter-spacing: 1px;
+ }
+
+.middle_section{
+    transform: translate(0px, -160px);
+    width: 100%;
+}
+
+.middle_div{
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.first_div{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 17px 0 rgba(74, 74, 74, 0.4);
+    background-image: linear-gradient(123deg, #ffffff, #ffffff);
+    display: inline-block;
+    width: 49%;
+}
+
+.second_div{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 17px 0 rgba(74, 74, 74, 0.4);
+    background-image: linear-gradient(123deg, #ffffff, #ffffff);
+    float: right;
+    width: 49%;
+}
+
+.recruitment{
+    padding: 2%;
+}
+.circle{
+    background-color: #54db7b;
+    border-radius: 50%;
+    height: 10px;
+    margin: 2%;
+    width: 10px;
+}
+.para{
+    color: #4a4a4a;
+    display: inline;
+    font-size: 24px;
+    font-family: Muli;
+    font-weight: bold;   
+    justify-content: space-between; 
+}
+.report{
+    padding:0px 8px; 
+}
+.wipro{
+    display: flex;
+    padding: 2% 0%;
+}
+
+.menu_icon{
+    transform: translateX(50px);
+    /* width: 30%; */
+}
+.walk{
+    
+    height: 15px;
+    margin: 0% 2%;
+}
+.walk_in{
+    color: #9b9b9b;
+    font-family: Muli;
+    font-size: 14;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.candidates{
+    padding: 0% 4%;
+    text-align: center;
+    width: 30%;
+}
+
+.logged_in{
+    color: #666666;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.57;
+
+}
+.candidates_count{
+    color: #4a4a4a;
+    font-size: 30px;
+    font-weight: bold;
+    padding:8% 0%;
+}
+
+.candidate_details{
+    display: flex;
+    overflow: hidden;
+    padding: 4% 0%;
+}
+
+.status{
+    color: #ff4d63;
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    line-height: 1.06;
+    padding: 2% 2%;
+    text-align: left;
+}
+
+.status_bar{
+    padding: 2% ;
+}
+
+.status0{
+    display: inline-block;
+    width: 30%;
+}
+.status1{
+    background-color: #ff4d63;
+    border: 5px solid #ff4d63;
+}
+
+.status2{
+    background-color: rgba(204, 204, 204, 0.5);
+    border: 5px solid rgba(204, 204, 204, 0.5);
+}
+.status3{
+    background-color: #ff9f4c;
+    border: 5px solid #ff9f4c;
+}
+
+.status4{
+    background-color: #13be9e;
+    border: 5px solid #13be9e;
+}
+
+.body_section{
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.body_div{
+    max-width: 1000px;
+    margin: 0px auto;
+    position: relative;
+    transform: translate(0px, -120px);
+}
+
+
+.active-assessments{
+    color: #4a4a4a;
+    font-family: Muli;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    position: relative;
+    text-align: center;
+}
+
+.search-filter{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 11%;
+}
+
+.box_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4% 0%;
+}
+
+.innerpadding{
+    padding: 5%;
+}
+.senior{
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 #d9dce9;
+    background-color: #ffffff;
+    border: solid 1px #e5e3e3;
+    margin-bottom: 16px;
+    width: 32%;
+}
+
+.head_para{
+    color: #4a4a4a;
+    display: inline;
+    font-size: 18px;
+    font-family: Muli;
+    font-weight: bold;    
+}
+
+.candidates_appeared{
+    width: 60%;
+}
+
+.last_active{
+    width: 40%;
+}
+
+.appeared_count{
+    color:  #8c8aa7;
+    font-family: Muli;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    line-height: 1.50;
+}
+
+.count_date{
+    color: #666666;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.36;
+    letter-spacing: 0.4px;
+    padding: 2% 0%;
+}
+
+.status_bar{
+    padding: 2% 0%;
+}
+.status11{
+    width: 28%;
+}
+
+.status_style{
+    color: #ff4d63;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.36;
+    letter-spacing: 0.4px;
+    padding: 2% 0%;
+}
+
+.margin_style{
+    margin: 0%;
+}
+
+.walkin_padding{
+    padding: 0% 2%;
+    width: 50%;
+}
+
+.show_more{
+    color: #4873de;
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.36;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.search-icon{
+    border-radius: 50%;
+    border: 1px solid #4873de;
+    margin-left: 10%;
+    padding:10px;
+}
+.background{
+    border: 1px solid #ffffff;
+    height: 15px;
+}
+
+.left_arrow{
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    left: -20%;
+    margin-left: 10%;
+    padding:10px;
+    position: absolute;
+    top: -24%;
+}
+
+.right_arrow{
+    background-color:  #177ac1;
+    border-radius: 50%;
+    border: 1px solid #177ac1;
+    padding:10px;
+    position: absolute;
+    right: -10%;
+    top: -24%;
+}

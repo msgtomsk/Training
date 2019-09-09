@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarath</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body onload="loadjson()">
+    <!-- Header section -->
+    <section class = "header_section">
+        <header class = "header_style">
+            <!-- Sticky navbar -->
+            <div class="navigation" id = "navbar">
+                <figure>
+                    <img src = "images/logo1.png" alt= ""/>
+                </figure>
+                <nav class = "topnav">
+                    <ul class="nav_list" id = "list" >
+                        <li class = "inactive active" onclick = "activeFunction()" ><a class="nav_text"  href= "#">ASSESSMENTS</a></li>
+                        <li class = "inactive" onclick = "activeFunction()" ><a class="nav_text"  href= "#">CATALOGUE</a></li>
+                        <li class = "inactive" onclick = "activeFunction()"><a class="nav_text" href= "#">CANDIDATES</a></li>
+                        <li class = "inactive" onclick = "activeFunction()"><a class="nav_text" href= "#">REPORTS</a></li>
+                    </ul>
+                </nav>
+                <!-- <nav class = "topnav">
+                    <ul class="nav_list" >
+                        <li class = "list inactive active"><a class="nav_text" onclick = "activeFunction('list1')" id="list1" href= "#">ASSESSMENTS</a></li>
+                        <li class = "list inactive"><a class="nav_text" id="list2" onclick = "activeFunction('list2')" href= "#">CATALOGUE</a></li>
+                        <li class = "list inactive"><a class="nav_text" id="list3" onclick = "activeFunction('list3')" href= "#">CANDIDATES</a></li>
+                        <li class = "list inactive"><a class="nav_text" id="list4" onclick = "activeFunction('list4')" href= "#">REPORTS</a></li>
+                    </ul>
+                </nav> -->
+                <div class = "icons_right">
+                   <img class="icon" src="images/search.png" alt=""/> 
+                   <img class="icon" src= "images/user.png" alt=""/>
+                </div>
+            </div>
+            <!-- notification bar -->
+            <div class="notification_bar">
+                <figure>
+                    <img class = "search-icon background" src = "images/notification1.png" alt= ""/>
+                </figure>
+                <div class="info">
+                    <p class = "live">Live Assessments</p>
+                </div>
+                <div class="navigation1">
+                    <button class = "button1" type="button">NEW ASSESSMENT</button>
+                </div>
+            </div>
+            <p class="date">30 May 2017</p>
+            
+        </header>
+        
+    </section>
+
+    <!-- Body section -->
+    <section class="body_section">
+        
+
+        <!-- Middle Section -->
+        <section class="middle_section">
+            <div class="middle_div" >
+                 <!-- Left Arrow -->
+            <figure  class="left">
+                <img class="left_arrow button_left"  id = "left_arrow1" src="images/left-chevron.svg" alt=""></figure>
+
+            <!-- Right arrow -->
+            <figure class="right"><img class="right_arrow button_right" id = "right_arrow1" src="images/right-chevron-white.svg" alt=""></figure>
+
+            <div class="carousel_cont">
+                <div class="carousel" id="carouselID">
+                   
+                </div>
+              </div>
+            
+              </div>
+        </section>
+    
+        <!-- Body Content -->
+        <div class = "body_div">
+                   
+            <!-- Left Arrow -->
+            <!-- <figure  >
+                <img class="left_arrow button_left"  id = "left_arrow1" src="images/left-chevron.svg" alt=""></figure> -->
+
+            <!-- Right arrow -->
+            <!-- <figure><img class="right_arrow button_right" id = "right_arrow1" src="images/right-chevron-white.svg" alt=""></figure> -->
+
+            <p class="active-assessments">Active Assessments</p>
+            <figure class="search-filter">
+                <img class = "search-icon" src = "images/search1.png"/>
+                <img class = "search-icon" src = "images/filter.png"/>
+            </figure>
+
+            <!-- Box Division -->
+         
+            <section class = "box_section" id = "bodycontent"></section>
+        </div>
+        <p class="show_more" id = "showmore"><u class = "show_more"  onClick="removeheight()">SHOW MORE</u></p>
+    </section>
+    <script src="js/main.js"></script>
+   
+</body>
+</html>
+
+
+
+

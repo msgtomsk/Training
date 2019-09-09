@@ -1,0 +1,14 @@
+[
+    {
+        "logged":80,
+        "completed":20,
+        "groups":8,
+        "status":"Poor - 08 passed"
+    },
+    {
+        "logged":80,
+        "completed":20,
+        "groups":8,
+        "status":"Average - 40 passed"
+    }
+]
